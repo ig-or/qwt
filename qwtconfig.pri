@@ -16,15 +16,15 @@ QWT_VERSION      = $${QWT_VER_MAJ}.$${QWT_VER_MIN}.$${QWT_VER_PAT}
 # Install paths
 ######################################################################
 
-QWT_INSTALL_PREFIX = $$[QT_INSTALL_PREFIX]
+QWT_INSTALL_PREFIX = $$(prefix)
 
 unix {
-    QWT_INSTALL_PREFIX    = /usr/local/qwt-$$QWT_VERSION-svn
+#    QWT_INSTALL_PREFIX    = /usr/local/qwt-$$QWT_VERSION-svn
     # QWT_INSTALL_PREFIX = /usr/local/qwt-$$QWT_VERSION-svn-qt-$$QT_VERSION
 }
 
 win32 {
-    QWT_INSTALL_PREFIX    = C:/Qwt-$$QWT_VERSION-svn
+#    QWT_INSTALL_PREFIX    = C:/Qwt-$$QWT_VERSION-svn
     # QWT_INSTALL_PREFIX = C:/Qwt-$$QWT_VERSION-svn-qt-$$QT_VERSION
 }
 
@@ -110,7 +110,7 @@ QWT_CONFIG     += QwtOpenGL
 # to your qmake project file.
 ######################################################################
 
-QWT_CONFIG     += QwtMathML
+#QWT_CONFIG     += QwtMathML
 
 ######################################################################
 # If you want to build the Qwt designer plugin,
@@ -118,7 +118,7 @@ QWT_CONFIG     += QwtMathML
 # Otherwise you have to build it from the designer directory.
 ######################################################################
 
-QWT_CONFIG     += QwtDesigner
+#QWT_CONFIG     += QwtDesigner
 
 ######################################################################
 # Compile all Qwt classes into the designer plugin instead
@@ -133,7 +133,7 @@ QWT_CONFIG     += QwtDesigner
 ######################################################################
 
 win32 {
-    QWT_CONFIG     += QwtDesignerSelfContained
+#    QWT_CONFIG     += QwtDesignerSelfContained
 }
 
 ######################################################################
@@ -141,7 +141,7 @@ win32 {
 # Otherwise you have to build them from the examples directory.
 ######################################################################
 
-QWT_CONFIG     += QwtExamples
+#QWT_CONFIG     += QwtExamples
 
 ######################################################################
 # The playground is primarily intended for the Qwt development
@@ -152,14 +152,14 @@ QWT_CONFIG     += QwtExamples
 # Otherwise you have to build them from the playground directory.
 ######################################################################
 
-QWT_CONFIG     += QwtPlayground
+#QWT_CONFIG     += QwtPlayground
 
 ######################################################################
 # If you want to auto build the tests, enable the line below
 # Otherwise you have to build them from the tests directory.
 ######################################################################
 
-QWT_CONFIG     += QwtTests
+#QWT_CONFIG     += QwtTests
 
 ######################################################################
 # When Qt has been built as framework qmake wants

@@ -20,7 +20,7 @@ CONFIG           -= depend_includepath
 # CONFIG += sanitize
 # CONFIG += pedantic
 
-# CONFIG += c++11
+CONFIG += c++11
 
 c++11 {
     CONFIG           += strict_c++
@@ -138,7 +138,7 @@ linux {
 
         # qwt code doesn't rely ( at least intends not to do )
         # on an exact implementation of IEEE or ISO rules/specifications
-        QMAKE_CXXFLAGS   *= -funsafe-math-optimizations
+        #QMAKE_CXXFLAGS   *= -funsafe-math-optimizations
 
         # also enables -fno-math-errno and -funsafe-math-optimizations
         # QMAKE_CXXFLAGS   *= -ffast-math
